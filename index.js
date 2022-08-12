@@ -31,7 +31,7 @@ async function run() {
     const database = client.db("tourmanager");
     const placeCollection = database.collection("places");
 
-    //post a place to db
+    //post a place to database
     app.post("/places", async (req, res) => {
       const place = req.body;
 
